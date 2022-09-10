@@ -10,8 +10,8 @@ import UIKit
 
 extension UIViewController {
   func setNeedsUpdateConstraints() {
-    children.forEach { $0.setNeedsUpdateConstraints() }
-    view.setNeedsUpdateConstraints()
+      children.forEach { $0.setNeedsUpdateConstraints() }
+      view.setNeedsUpdateConstraints()
   }
   
   func dismissPresentedViewControllers(completion: @escaping () -> Void) {

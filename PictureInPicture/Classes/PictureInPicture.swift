@@ -106,9 +106,9 @@ public final class PictureInPicture {
   private var keyWindow = UIApplication.shared.keyWindow
   
   private func prepareNotification() {
-    NotificationCenter.default.addObserver(self, selector: #selector(windowDidBecomeKey), name: UIWindow.didBecomeKeyNotification, object: nil)
-    NotificationCenter.default.addObserver(self, selector: #selector(madeLarger), name: .PictureInPictureMadeLarger, object: nil)
-    NotificationCenter.default.addObserver(self, selector: #selector(didBeginMakingSmaller), name: .PictureInPictureDidBeginMakingSmaller, object: nil)
+      NotificationCenter.default.addObserver(self, selector: #selector(windowDidBecomeKey), name: UIWindow.didBecomeKeyNotification, object: nil)
+      NotificationCenter.default.addObserver(self, selector: #selector(madeLarger), name: .PictureInPictureMadeLarger, object: nil)
+      NotificationCenter.default.addObserver(self, selector: #selector(didBeginMakingSmaller), name: .PictureInPictureDidBeginMakingSmaller, object: nil)
   }
   
   @objc private func windowDidBecomeKey() {
