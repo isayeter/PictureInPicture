@@ -19,6 +19,7 @@ extension UIViewController {
       vc.dismissWithPresentedViewController(completion: completion)
     } else {
       completion()
+        self.removeFromParent()
     }
   }
   
